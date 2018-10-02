@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="main.js"></script>
+	<title>V'STAND</title>
+	<link rel="icon" type="image/icon" href="logo.png">
+</head>
+<body>
+	<!-- HEADER section -->
+	<header>
+		<nav>
+			<div class="row"> 
+				<img src="logo-white.png" alt="Omnifood Logo" class="logo">
+				<img src="logo.png" alt="Omnifood Logo" class="logo-black">
+				<ul class="main-nav js--main-nav">  
+					<li><a href="#features">V'Stand</a></li>
+					<li><a href="#works">Cara Kerja</a></li>
+					<li><a href="#cities">Lokasi Kami</a></li>
+					<li><a href="#plans">Pesan</a></li>
+					<li><a href="#kritik">Kritik & Saran</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="hero-text">
+			<h1>Halo Standian!<br> Selamat Datang di V'STAND :)</h1>
+			<a class="btn btn-full" href="#plans">Saya Lapar !</a>
+			<a class="btn btn-ghost" href="#features">Lihat Selengkapnya...</a>
+		</div>
+	</header>
+	
+	<!-- VStand section -->
+	
+	<section id="features">
+		<div class="row">
+			<h2>V'STAND</h2>
+			<p class="long-copy">
+				Tidak hanya bersih dan sehat, namun juga murah meriah
+			</p>
+		</div>
+	<!--FOTO MAKANAN section -->
+	<!--<section class="meals">-->
+		<div id="slider">
+			<div id="slide-holder">
+				<div class="slide"> <img src="1.jpg"></div>
+				<div class="slide"> <img src="2.jpg"></div>
+				<div class="slide"> <img src="3.jpg"></div>
+				<div class="slide"> <img src="8.jpg"></div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- CARA KERJA section -->
+
+	<section class="steps" id="works">
+		<div class="row">
+			<h2>Cara Kerja &mdash; V'STAND</h2>
+		</div>
+		<div class="row"> <!-- col for iphone, col for steps, all in same row -->
+			<div class="col span-1-of-2 steps-box">
+				<div class="works-steps">
+					<div>1</div>
+					<p>Pilih makanan stand sesuai selera Anda</p>
+				</div>
+				<div class="works-steps">
+					<div>2</div>
+					<p>Pesan makanan stand Anda melalui aplikasi mobile atau website ini. Anda juga dapat menghubungi kami!</p>
+					&ensp; 
+					<p>Hanya di 0221-757575</p>
+				</div>
+				<div class="works-steps">
+					<div>3</div>
+					<p>Tunggu makanan stand sampai. Selamat menikmati!</p>
+				</div>
+				<a href="#" class="btn-app">
+					<img src="download-app.svg" alt="App store">
+				</a>
+				<a href="#" class="btn-app">
+					<img src="download-app-android.png" alt="Google play store">
+				</a>
+			</div>
+			<div class="col span-1-of-2 steps-box">
+				<img src="logo.png" alt="Omnifood app on iPhone" >
+			</div>
+		</div>
+	</section>
+	
+	<!-- LOKASI section nanti mau rencana ditambahin gmaps-->
+
+	<section class="cities" id="cities">
+		<div class="row">
+			<h2>Lokasi Kami</h2>
+		</div>
+		<div class="row">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0467216798124!2d106.61612971436094!3d-6.2575759630066505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fc7b260ca1ed%3A0xb83752eec7c57ddd!2sUniversitas+Multimedia+Nusantara!5e0!3m2!1sen!2sid!4v1538406683495" width="1150" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</section>
+
+	<!-- QUOTE section -->
+
+	<section class="testimonials">
+		<div class="row">
+			<h2>Quote</h2>
+			<h5>
+				<div class="row">
+					<div class="col span-1-of-5">
+						<blockquote>
+							"Makanan itu harus mengenyangkan"
+						<cite><img src="customer-1.jpg" alt="Livia Jessica">Livia Jessica - 00000013091</cite>
+						</blockquote>
+					</div>
+					<div class="col span-1-of-5">
+						<blockquote>
+							"Makanan itu harus murah"
+						<cite><img src="customer-2.jpg" alt="Kevin Christian">Kevin Christian - 0000000</cite>
+						</blockquote>
+					</div>
+					<div class="col span-1-of-5">
+						<blockquote>
+							"Makanan itu harus bisa dimakan"
+						<cite><img src="customer-3.jpg" alt="Septaria Dwi Natapura">Septaria Dwi Natapura - 000000012781</cite>
+						</blockquote>
+					</div>
+					<div class="col span-1-of-5">
+						<blockquote>
+							"Makananku makanan manusia"
+						<cite><img src="customer-4.jpg" alt="Reza Setiabudi">Reza Setabudi - 00000012926</cite>
+						</blockquote>
+					</div>
+					<div class="col span-1-of-5">
+						<blockquote>
+							"Makananku, makananmu juga"
+						<cite><img src="customer-5.jpg" alt="Sagita">Sagita Sasmita Wijaya - 00000022165</cite>
+						</blockquote>
+					</div>
+			</h5>
+			</div>
+		</div>
+	</section>
+
+	<!-- PESAN section -->
+	
+	<section class="plans js--section-plans" id="plans">
+		<div class="row">
+			<h2>Pesan Sekarang yuk!</h2>
+		</div>
+		<div class="row">
+			<div class="col span-1-of-3">
+				<div class="plan-box js--wp-4">
+					<div> <!-- Monthly price -->
+						<h3>PASTA 1</h3>
+						<h4>[PAket STAnd 1]</h4>
+						<p class="plan-price">Rp 30.000 </p>
+						<!--<p class="plan-meal">That's only $13.30 per meal!</p>-->
+					</div>
+					<div> <!-- Check marks -->
+						<ul>
+							<li>
+								<p>&#9745 2 Nasi + 2 Lauk + 1 snack</p> 
+							</li>
+							<li>
+								<p>&#9745 Gratis 2 Minuman</p> 
+							</li>
+							<li>
+								<p>&#9745 Ongkir Gratis setiap pembelian min 20 paket</p> 
+							</li>
+							
+						</ul>
+					</div>
+					<div>
+						<a href="#" class="btn btn-full">Pesan Sekarang!</a>
+					</div>
+				</div>
+			</div>
+			<div class="col span-1-of-3">
+				<div class="plan-box">
+					<div>
+						<h3>PASTA 2</h3>
+						<h4>[PAket STAnd 2]</h4>
+						<p class="plan-price">Rp 20.000 </p>
+					</div>
+					<div> 
+						<ul>
+							<li>
+								<p>&#9745 1 Nasi + 1 Lauk + 1 snack</p> 
+							</li>
+							<li>
+								<p>&#9745 Gratis 1 Minuman</p> 
+							</li>
+							<li>
+								<p>&#9745 Ongkir Gratis setiap pembelian min 20 paket</p> 
+							</li>
+						</ul>
+					</div>
+					<div> 
+						<a href="#" class="btn btn-ghost">Pesan Sekarang!</a>
+					</div>
+				</div>
+			</div>
+			<div class="col span-1-of-3">
+				<div class="plan-box">
+					<div>
+						<h3>PASTA 3</h3>
+						<h4>[PAket STAnd 3]</h4>
+						<p class="plan-price">Rp 12.000</p>
+					</div>
+					<div> 
+						<ul>
+							<li>
+								<p>&#9745 1 Nasi + 1 Lauk</p> 
+							</li>
+							<li>
+								<p>&nbsp;</p> 
+							</li>
+							<li>
+								<p>&#9745 Ongkir Gratis setiap pembelian min 20 paket</p> 
+							</li>
+						</ul>
+					</div>
+					<div> 
+						<a href="#" class="btn btn-ghost">Pesan Sekarang!</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- KRITIK dan SARAN section -->
+
+	<div class="map-box">
+
+		<div class="map">
+			
+		</div>
+		<div class="form-box">
+			<div class="row" id="kritik">
+				<h2>Kritik dan Saran</h2>
+			</div>
+			<div class="row">
+				<form action="#" method="post" class="contact-form">
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="name">Nama</label>
+						</div>
+						<div class="col span-2-of-3"> 
+							<input type="text" name="name" id="name" placeholder="Nama Anda" class="name" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="email">Email</label>
+						</div>
+						<div class="col span-2-of-3"> 
+							<input type="email" name="email" id="email" placeholder="Email Anda" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>Kritik dan Saran</label>
+						</div>
+						<div class="col span-2-of-3"> 
+							<textarea name="message" placeholder="Kritik dan Saran Anda"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>&nbsp;</label>
+						</div>
+						<div class="col span-2-of-3"> 
+							<input type="submit" value="Kirim">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer section -->
+
+	<footer>
+		<div class="row">
+			<div class="col span-1-of-2">
+				<ul class="footer-nav">
+					<li>
+						<a href="#">iOS App</a>
+					</li>
+					<li>
+						<a href="#">Android App</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col span-1-of-2">
+				<ul class="social-icons">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				</ul>
+			</div>	
+			<div class="row">
+				<p>Copyright &copy; 2018 by V'Stand.</p>
+			</div>
+		</div>
+	</footer>
+</body>
+
+<img src="up.png" id = "myBtn" onclick="topFunction()">
+</html>
