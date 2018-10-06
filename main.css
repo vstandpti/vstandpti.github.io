@@ -17,6 +17,7 @@ table, td, th{
     text-align: left;
     height: 100%;
     width: 100%;
+    font-size: 15px;
 }
 
 table{
@@ -1103,7 +1104,7 @@ th {
 
 
 
-/*GRID.CSS*/
+/*GRID DAN COLUMN.CSS*/
 
 /*  SECTIONS  ============================================================================= */
 

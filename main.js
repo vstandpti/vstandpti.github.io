@@ -67,14 +67,75 @@
 //         singleRow.appendChild(colName)
 //         singleRow.appendChild(colMessage)
 //         tbody.appendChild(singleRow)
+
+//         let divContainer = document.getElementById("map-box");
+//         divContainer.innerHTML="";
+//         divContainer.appendChild(tbody);
 //     }
 // }
 // }
 
-// function onDocumentFinish(){
+// function kritikSaran(){
 //     loadUserData()
 // }
 
+
+// function kritikSaran() { 
+//   var xhttp = new XMLHttpRequest();
+//   xhttp.onreadystatechange = function() {
+//     if (this.readyState == 4 && this.status == 200) {
+//       var text = this.responseText; 
+//       var data = JSON.parse(text);
+//       document.getElementById("name").innerHTML = data.results[1].name; 
+//       document.getElementById("message").innerHTML = data.results[1].quote;
+//     } 
+//   }; 
+//   xhttp.open("GET", "quote.json", true); 
+//   xhttp.send(); 
+// }
+
+function loadUserData(){
+    function generateUserTable(data){
+    let idx = 0;
+    let tbody = document.getElementById('tableKritik').querySelector('tbody')
+    tbody.innerHTML = ''
+    for(idx=0;idx<data.length;idx++) {
+        let singleRow = document.createElement('tr')
+
+        let colName = document.createElement('td')
+        colName.appendChild(document.createTextNode(data[idx].name))
+        let colEmail = document.createElement('td')
+        colEmail.appendChild(document.createTextNode(data[idx].company.catchPhrase))
+        
+
+         singleRow.appendChild(colEmail)
+     singleRow.appendChild(colName)
+        tbody.appendChild(singleRow)
+    }
+}
+
+    let request = new XMLHttpRequest()
+    let url = 'https://jsonplaceholder.typicode.com/users'
+    request.open('GET', url, true)
+
+    request.onload = function() {
+        if (request.status >= 200 && request.status < 400) {
+            let data = JSON.parse(request.responseText)
+            generateUserTable(data);
+        } else {
+            alert('Page Not Found!')
+        }
+    }
+    request.onerror = function() {
+        alert('Request Failed! Check your internet connection!')
+    }
+
+    request.send()
+}
+
+function kritikSaran(){
+    loadUserData()
+}
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
