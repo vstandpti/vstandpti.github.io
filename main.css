@@ -1,4 +1,3 @@
-/*STYLES.CSS*/
 * {
 	margin: 0;
 	padding: 0;
@@ -7,6 +6,26 @@
 
 *:focus { 
 	outline: none; 
+}
+
+tr{
+    border-radius: 10px;
+}
+
+table, td, th{
+    border: 2px solid #ccc; 
+    text-align: left;
+    height: 100%;
+    width: 100%;
+}
+
+table{
+    border-collapse: collapse; 
+    width: 100%;
+}
+
+html {
+	  scroll-behavior: smooth;
 }
 /*ini buat back to top*/
 #myBtn {
