@@ -13,20 +13,31 @@
 	<link rel="icon" type="image/icon" href="resources/img/logo.png">
 	<title>V'STAND</title>
 </head>
-<body>
+<body onload = "checkLogin()">
 	<header>
 		<nav>
-			<div class="row"> 
+			<div id = "nav" class="row"> 
 				<img src="resources/img/logo-white.png" alt="V'Stand Logo" class="logo">
 				<img src="resources/img/logo.png" alt="V'Stand Logo" class="logo-black">
-				<ul class="main-nav js--main-nav">  
+				<div>
+					<ul class="main-nav js--main-nav">  
 					<li><a href="#features">V'Stand</a></li>
 					<li><a href="#works">Cara Kerja</a></li>
 					<li><a href="#cities">Lokasi Kami</a></li>
 					<li><a href="#plans">Pesan</a></li>
 					<li><a href="#kritik">Kritik & Saran</a></li>
-					<li><a href="login.html">Login</a></li>
-				</ul>
+					<li id="navigasilogin"><a href="login.html">Login</a></li>
+				<!-- </ul>
+				<ul id="navigasilogout" class="main-nav js--main-nav">  
+								<li><a href="#features">V'Stand</a></li>
+								<li><a href="#works">Cara Kerja</a></li>
+								<li><a href="#cities">Lokasi Kami</a></li>
+								<li><a href="#plans">Pesan</a></li>
+								<li><a href="#kritik">Kritik & Saran</a></li> -->
+					<li id="navigasilogout"><a onclick = "logout()" href = "#">Logout</a></li>
+							</ul>
+				</div>
+				<script src="js/login.js"></script>
 				<a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a> 
 			</div>
 		</nav>
@@ -324,8 +335,12 @@
 			</div>
 		</div>
 	</footer>
+	<script>
+		document.getElementById("navigasilogout").style.display = "none";
+	</script>
 	<a href="#"><img src="resources/img/up.png" id = "myBtn" onclick="topFunction()"></a>
 	<script src="js/main.js"></script>
+	<!-- <script src="js/login.js"></script> -->
 	<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
 	<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>

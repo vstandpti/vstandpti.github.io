@@ -8,8 +8,10 @@ const email = document.querySelector('input[name="email"]'),
   createBtn = document.querySelector('#createBtn'),
   createDiv = document.querySelector('#create'),
   loggedInDiv = document.querySelector('#loggedIn');
+  navDiv = document.querySelector('#navigasilogin');
+  navlogDiv = document.querySelector('#navigasilogout');
 
-createDiv.style.display = 'none';
+
 
 // Event Listeners 
 createBtn.addEventListener('click', createAccount);
@@ -40,10 +42,32 @@ function login() {
       loginDiv.style.display = 'none';
       createDiv.style.display = 'none';
       loggedInDiv.style.display = 'block';
-	  window.location = 'pesan.html';
+
+      localStorage.setItem('statusLogin','success');
+    
+      window.location = 'index.html';
     }
   } else {
     alert('Login Failed');
   }
 
+}
+
+function checkLogin(){
+  let check_login = localStorage.getItem('statusLogin');
+
+  if(check_login == 'success'){
+    document.getElementById("navigasilogout").style.display = "block";
+    document.getElementById("navigasilogin").style.display = "none";
+  }
+  else
+  {
+    document.getElementById("navigasilogout").style.display = "none";
+    document.getElementById("navigasilogin").style.display = "block";
+  }
+}
+
+function logout(){
+  localStorage.removeItem('statusLogin');
+  window.location = 'index.html';
 }
