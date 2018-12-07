@@ -78,17 +78,17 @@
 
 	var productsData = [{
 		id: 1,
-		name: 'Nasi + Tahu + Minum + Lalapan',
+		name: 'Nasi + Ayam Rica-rica + Lalapan + Es Teh Manis',
 		price: 17.000,
 		image: "resources/img/1.jpg"
 	},{
 		id: 2,
-		name: 'product2',
+		name: 'Nasi + Ikan Pepes + Capcay + Lalapan + Es Teh Manis',
 		price: 20.000,
 		image: ''
 	},{
 		id: 3,
-		name: 'product3',
+		name: 'Nasi + Sate + Capcay + Tahu Tempe + Lalapan + Es Teh Manis',
 		price: 30.000,
 		image: ''
 	}];

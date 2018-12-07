@@ -26,7 +26,8 @@
   </head>
 
   <body>
-    <div class="row">
+    <header>
+    	<div class="row">
       <div ng-controller="StoreController">
         <h1>Pilihan Lauk</h1>
         <ul class="" style="float:center;">
@@ -50,11 +51,21 @@
               <input class="btn btn-danger" type="button" ng-click="removeItemCart(c)" value="Remove" />
             </li>
           </ul>
-          <!-- Product : {{c.name}}
-          Total : {{total | currency: "Rp " : 3}} -->
+ 
+          Total : {{total | currency: "Rp " : 3}}
+        </div>
+        <div>
+        	<a href="index.html"><button onclick="myFunction()">Pesan!</button></a>
+        	<a href="index.html"><button>Kembali</button></a>
+        	<script>
+function myFunction() {
+  alert("Pesanan Anda sudah kami terima. Silahkan menunggu pesanan anda!");
+}
+</script>
         </div>
       </div>
-    </div>
+  </div>
+    </header>
   </body>
 
 </html>
