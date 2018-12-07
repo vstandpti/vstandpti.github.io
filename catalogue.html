@@ -45,9 +45,9 @@
         <div ng-show="cart.length !== 0">
           <h1>Order Anda</h1>
           <ul class="list-group">
-            <li class="list-group-item" ng-repeat="c in cart">
-              <h4><span style="color:blue">{{c.name}}</span> |                <span style="color:blue"> {{c.count}} </span>
- | <span style="color:black">{{c.price*c.count | currency: "Rp " : 3}}</span></h4>
+            <li class="" ng-repeat="c in cart">
+              <h4><span style="color:white">{{c.name}}</span> |                <span style="color:white"> {{c.count}} </span>
+ | <span style="color:white">{{c.price*c.count | currency: "Rp " : 3}}</span></h4>
               <input class="btn btn-danger" type="button" ng-click="removeItemCart(c)" value="Remove" />
             </li>
           </ul>
