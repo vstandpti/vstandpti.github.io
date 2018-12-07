@@ -94,6 +94,8 @@
 //   xhttp.send(); 
 // }
 
+// btnSubmit.addEventListener('click', onDocumentFinish);
+
 function loadUserData(){
     function generateUserTable(data){
     let idx = 0;
