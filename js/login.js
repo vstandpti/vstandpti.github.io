@@ -11,7 +11,7 @@ const email = document.querySelector('input[name="email"]'),
   navDiv = document.querySelector('#navigasilogin');
   navlogDiv = document.querySelector('#navigasilogout');
 
-
+createDiv.style.display='none';
 
 // Event Listeners 
 createBtn.addEventListener('click', createAccount);
