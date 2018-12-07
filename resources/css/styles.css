@@ -304,6 +304,7 @@ header {
 	background-position: center;
 	height: 100vh; /* 100% of the viewport's height */
 	background-attachment: fixed;
+	color: #fff;
 }
 
 .hero-text {
